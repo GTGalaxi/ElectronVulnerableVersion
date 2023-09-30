@@ -1,6 +1,6 @@
 # Find Electron Apps Vulnerable to CVE-2023-4863 / CVE-2023-5129
 
-This powershell script downloads [Sysinternals Strings](https://learn.microsoft.com/en-us/sysinternals/downloads/strings) and recursively searches the strings of every `.exe` for the Electron version and compares to known patched versions below to determine if vulnerable.
+This powershell script downloads [Sysinternals Strings](https://learn.microsoft.com/en-us/sysinternals/downloads/strings) and recursively searches the strings of every `.exe` for the Electron version and compares to known patched versions below to determine if vulnerable to [CVE-2023-4863](https://nvd.nist.gov/vuln/detail/CVE-2023-4863) / [CVE-2023-5129](https://nvd.nist.gov/vuln/detail/CVE-2023-5129).
 
 ## Vulnerability patched in Electron Versions
 
