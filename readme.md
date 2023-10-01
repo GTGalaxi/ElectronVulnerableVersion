@@ -2,6 +2,10 @@
 
 This PowerShell script downloads [Sysinternals Strings](https://learn.microsoft.com/en-us/sysinternals/downloads/strings), recursively searches for strings within all `.exe` files across all drives, and compares the Electron version found with known patched versions below to determine vulnerability to [CVE-2023-4863](https://nvd.nist.gov/vuln/detail/CVE-2023-4863) / [CVE-2023-5129](https://nvd.nist.gov/vuln/detail/CVE-2023-5129).
 
+> **Note:**
+> 
+> The script downloads `strings.zip` to `C:\Windows\Temp` and extracts `strings.exe` from it. The user running the script needs permissions for this folder. If you're using an RMM tool, there should be no issues since it runs as SYSTEM or an admin account. But if you're running it locally, you might need to open the folder in Explorer to grant necessary permissions..
+
 ## Vulnerability patched in Electron Versions
 
 ### Stable
